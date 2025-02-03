@@ -24,7 +24,7 @@ let corsOptions = {
   origin : ['http://localhost:5173', 'https://booksstore-app-client.vercel.app/']
 }
 
-app.use(cors(corsOptions))
+app.use(cors())
 
 app.get("/", (request, response) => {
   console.log(request);
