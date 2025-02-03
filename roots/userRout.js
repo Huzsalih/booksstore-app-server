@@ -29,7 +29,7 @@ const sendVerificationEmail = async (email, token) => {
         from: EMAIL,
         to: email,
         subject: 'Verify your email',
-        html: `<p>Click <a href="http://localhost:5173/user/verify?token=${token}">here</a> to verify your email.</p>`,
+        html: `<p>Click <a href="https://booksstore-app-client.vercel.app//user/verify?token=${token}">here</a> to verify your email.</p>`,
     };
 
     await transporter.sendMail(mailOptions);
